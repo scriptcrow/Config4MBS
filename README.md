@@ -22,6 +22,7 @@ Ablauf:  Fenster 1 (Projektname + Protokoll)
 CSV-Format (Trenner ; oder , -- UTF-8 oder Windows-1252, 1. Zeile = Kopf)
 
 -Spalte         Pflicht  Beschreibung
+_____________________________________
 
 UnitName       nein     Gerätename, Prefix im Namen ("klima 1"). Leer = wie Zeile darüber
 
@@ -49,6 +50,7 @@ Resolution     nein     nur AI/AV, Standard 0.1
 
 
 -Zusätzliche CSV-Spalten nur für ModbusIP-->ModbusIP 
+____________________________________________________
 
 IP             ja       IP des Remote-Geräts, optional mit Port: 192.168.0.1[:502]
 
