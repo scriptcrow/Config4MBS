@@ -11,18 +11,18 @@ Erzeugt aus einer CSV-Datenpunktliste die MBS-Gateway-Dateien:
 
   ModbusRTU>BacnetIP  :  dispatch.txt  modmster1.txt  bac1.txt
 
-  ModbusIP-->ModbusIP :  dispatch.txt  mbtcp1.txt   (alles ueber Route 860:
+  ModbusIP-->ModbusIP :  dispatch.txt  mbtcp1.txt   (alles über Route 860:
                          erst Remote-Geräte mit IP, dann lokaler Server 0.0.0.0)
 
-Ablauf:  Fenster 1 (Projektname + Richtung) 
- ->  Fenster 2 (CSV waehlen)
+Ablauf:  Fenster 1 (Projektname + Protokoll) 
+ ->  Fenster 2 (CSV wählen)
  ->  Ordner <Projektname> wird neben diesem Skript angelegt.
 
 
 CSV-Format (Trenner ; oder , -- UTF-8 oder Windows-1252, 1. Zeile = Kopf)
 
 Spalte         Pflicht  Beschreibung
-UnitName       nein     Geraetename, Prefix im Namen ("klima 1"). Leer = wie Zeile darueber
+UnitName       nein     Gerätename, Prefix im Namen ("klima 1"). Leer = wie Zeile darüber
 Description    ja       Bezeichnung des Datenpunkts ("unit setpoint temperature day")
 Slave          ja       Modbus-Slave-Adresse (1..247)
 Register       ja       coil oder holding
@@ -32,7 +32,7 @@ Format         nein     nur holding: f = Float (Standard)
 Access         nein     r oder rw (Schreibzugriff). Leer: BV/AV = rw, sonst r
 Type           BACnet   BI, BV (nur coil)  /  AI, AV (nur holding)
 Instance       nein     BACnet-Instanz. Leer = automatisch (Slave*1000 + n)
-Unit_States    nein     Binaer: "inaktiv;aktiv" (z.B. "off;on")
+Unit_States    nein     Binär: "inaktiv;aktiv" (z.B. "off;on")
                         Analog: Einheit (°C, %rF, %, bar, kW ...) oder BACnet-Code (62)
 Resolution     nein     nur AI/AV, Standard 0.1
 
