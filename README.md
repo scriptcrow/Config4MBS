@@ -21,6 +21,8 @@ Ablauf:  Fenster 1 (Projektname + Protokoll)
 
 CSV-Format (Trenner ; oder , -- UTF-8 oder Windows-1252, 1. Zeile = Kopf)
 
+
+
 -Spalte         Pflicht  Beschreibung
 _____________________________________
 
@@ -47,6 +49,7 @@ Unit_States    nein     Binär: "inaktiv;aktiv" (z.B. "off;on")
                         Analog: Einheit (°C, %rF, %, bar, kW ...) oder BACnet-Code (62)
 
 Resolution     nein     nur AI/AV, Standard 0.1
+
 
 
 -Zusätzliche CSV-Spalten nur für ModbusIP-->ModbusIP 
