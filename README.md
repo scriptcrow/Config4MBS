@@ -3,9 +3,9 @@ Erstellt Konfigurationsdateien für das MBS Gateway
 
 MBS Konfigurations-Generator
 ============================
-Unabhängiges Community-/Hilfswerkzeug zur Generierung von Konfigurationsdateien für MBS-Gateways; kein offizielles Produkt der MBS GmbH https://www.mbs-solutions.de/
+Unabhängiges Community-/Hilfswerkzeug zur Generierung von Konfigurationsdateien für MBS-Gateways; kein offizielles Produkt der MBS GmbH  https://www.mbs-solutions.de/
 
-Erzeugt aus einer CSV-Datenpunktliste die MBS-Gateway-Dateien:
+-Erzeugt aus einer CSV-Datenpunktliste die MBS-Gateway-Dateien:
 
   ModbusRTU>ModbusTCP :  dispatch.txt  modmster1.txt  mbtcp1.txt
 
@@ -21,7 +21,7 @@ Ablauf:  Fenster 1 (Projektname + Protokoll)
 
 CSV-Format (Trenner ; oder , -- UTF-8 oder Windows-1252, 1. Zeile = Kopf)
 
-Spalte         Pflicht  Beschreibung
+-Spalte         Pflicht  Beschreibung
 
 UnitName       nein     Gerätename, Prefix im Namen ("klima 1"). Leer = wie Zeile darüber
 
@@ -48,7 +48,7 @@ Unit_States    nein     Binär: "inaktiv;aktiv" (z.B. "off;on")
 Resolution     nein     nur AI/AV, Standard 0.1
 
 
- Zusätzliche CSV-Spalten nur für ModbusIP-->ModbusIP 
+-Zusätzliche CSV-Spalten nur für ModbusIP-->ModbusIP 
 
 IP             ja       IP des Remote-Geräts, optional mit Port: 192.168.0.1[:502]
 
