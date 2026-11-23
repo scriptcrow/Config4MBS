@@ -8,12 +8,15 @@ Unabhängiges Community-/Hilfswerkzeug zur Generierung von Konfigurationsdateien
 Erzeugt aus einer CSV-Datenpunktliste die MBS-Gateway-Dateien:
 
   ModbusRTU>ModbusTCP :  dispatch.txt  modmster1.txt  mbtcp1.txt
-  ModbusRTU>BacnetIP  :  dispatch.txt  modmster1.txt  bac1.txt
-  ModbusIP-->ModbusIP :  dispatch.txt  mbtcp1.txt   (alles ueber Route 860:
-                         erst Remote-Geraete mit IP, dann lokaler Server 0.0.0.0)
 
-Ablauf:  Fenster 1 (Projektname + Richtung)  ->  Fenster 2 (CSV waehlen)
-         ->  Ordner <Projektname> wird neben diesem Skript angelegt.
+  ModbusRTU>BacnetIP  :  dispatch.txt  modmster1.txt  bac1.txt
+
+  ModbusIP-->ModbusIP :  dispatch.txt  mbtcp1.txt   (alles ueber Route 860:
+                         erst Remote-Geräte mit IP, dann lokaler Server 0.0.0.0)
+
+Ablauf:  Fenster 1 (Projektname + Richtung) 
+ ->  Fenster 2 (CSV waehlen)
+ ->  Ordner <Projektname> wird neben diesem Skript angelegt.
 
 
 CSV-Format (Trenner ; oder , -- UTF-8 oder Windows-1252, 1. Zeile = Kopf)
