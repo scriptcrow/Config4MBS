@@ -15,8 +15,9 @@ Erzeugt aus einer CSV-Datenpunktliste die MBS-Gateway-Dateien:
 Ablauf:  Fenster 1 (Projektname + Richtung)  ->  Fenster 2 (CSV waehlen)
          ->  Ordner <Projektname> wird neben diesem Skript angelegt.
 
+
 CSV-Format (Trenner ; oder , -- UTF-8 oder Windows-1252, 1. Zeile = Kopf)
-------------------------------------------------------------------------
+
 Spalte         Pflicht  Beschreibung
 UnitName       nein     Geraetename, Prefix im Namen ("klima 1"). Leer = wie Zeile darueber
 Description    ja       Bezeichnung des Datenpunkts ("unit setpoint temperature day")
@@ -32,7 +33,9 @@ Unit_States    nein     Binaer: "inaktiv;aktiv" (z.B. "off;on")
                         Analog: Einheit (°C, %rF, %, bar, kW ...) oder BACnet-Code (62)
 Resolution     nein     nur AI/AV, Standard 0.1
 
---- Zusätzliche CSV-Spalten nur für ModbusIP-->ModbusIP -------------------
+
+ Zusätzliche CSV-Spalten nur für ModbusIP-->ModbusIP 
+
 IP             ja       IP des Remote-Geräts, optional mit Port: 192.168.0.1[:502]
 Slave          ja       Unit-ID des Remote-Geräts (0..255)
 Register       ja       coil, holding, input oder status
@@ -43,7 +46,8 @@ TCP_Slave      nein     Unit-ID auf der Server-Seite (0.0.0.0), Standard = Slave
 TCP_Register   nein     Registertyp Server-Seite, Standard = Register
 TCP_Address    nein     Adresse Server-Seite, Standard = Address
 TCP_Format     nein     Format Server-Seite, Standard = Format
------------------------------------------------------------------------------
+
+
 TCP_Format     nein     nur ModbusTCP: BIT, UINT8/16/32/64, SINT8/16/32/64, FLOAT32/64,
                         FIXED32/48 + optional S:<0-3> F:<faktor> O:<offset> M:<0-2>
                         z.B. "SINT16 F:10". Leer: coil=BIT, holding=FLOAT32 (bei Format f)
