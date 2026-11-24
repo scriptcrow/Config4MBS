@@ -10,9 +10,9 @@ Unabhängiges Community-/Hilfswerkzeug zur Generierung von Konfigurationsdateien
 #Erzeugt aus einer CSV-Datenpunktliste die MBS-Gateway-Dateien:
 ==========================================
 
-  ModbusRTU>ModbusTCP :  dispatch.txt  modmster1.txt  mbtcp1.txt
+  ModbusRTU-->ModbusTCP :  dispatch.txt  modmster1.txt  mbtcp1.txt
 
-  ModbusRTU>BacnetIP  :  dispatch.txt  modmster1.txt  bac1.txt
+  ModbusRTU-->BacnetIP  :  dispatch.txt  modmster1.txt  bac1.txt
 
   ModbusIP-->ModbusIP :  dispatch.txt  mbtcp1.txt   (alles über Route 860:
                          erst Remote-Geräte mit IP, dann lokaler Server 0.0.0.0)
